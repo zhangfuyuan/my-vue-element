@@ -14,6 +14,7 @@ import router from './router'
 import i18n from './lang' // internationalization
 import '@/icons' // icon
 // import '@/permission' // permission control（默认不用）
+import '@/directive/tableLoadmore' // 表格懒加载自定义指令
 
 Vue.use(ElementUI, {
   i18n: (key, value) => i18n.t(key, value)

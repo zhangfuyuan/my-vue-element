@@ -1,0 +1,32 @@
+.app-main {
+  overflow: visible !important;
+}
+
+.admin {
+  .el-table {
+    overflow: visible !important;
+
+    .el-table__header-wrapper {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+
+      th {
+        color: #fff;
+        background: #304156;
+      }
+    }
+  }
+
+  .el-upload {
+    display: block;
+
+    .el-upload-dragger {
+      width: 100%;
+    }
+  }
+  
+  .el-upload__tip {
+    text-align: center;
+  }
+}

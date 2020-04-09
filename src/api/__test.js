@@ -18,3 +18,11 @@ export function __test2() {
     data: {}
   })
 }
+
+export function getWordDetail(option) {
+  return request({
+    url: '/my-vue-element/__test/wordDetail',
+    method: 'post',
+    data: option
+  })
+}

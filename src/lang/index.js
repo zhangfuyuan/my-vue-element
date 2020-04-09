@@ -20,7 +20,7 @@ const messages = {
 }
 export function getLanguage() {
   const urlParam = param2Obj(window.location.href)
-  const paramLanguage = urlParam['lang']
+  const paramLanguage = urlParam['locale']
   if (paramLanguage) return paramLanguage
 
   // if has not choose language

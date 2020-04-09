@@ -1,3 +1,29 @@
 .admin {
   width: 100%;
+  padding: 20px;
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .search-date,
+      .search-input {
+        margin-right: 2%;
+        width: 46%;
+      }
+    }
+  }
+
+  .list {
+    .more-dropdown {
+      margin-left: 5px;
+    }
+  }
 }

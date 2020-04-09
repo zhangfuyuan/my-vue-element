@@ -14,6 +14,9 @@
 </template>
 
 <script>
+import defaultSettings from '@/settings'
+import logo from '@/assets/images/logo.png'
+
 export default {
   name: 'SidebarLogo',
   props: {
@@ -24,8 +27,8 @@ export default {
   },
   data() {
     return {
-      title: 'My Vue Element',
-      logo: 'https://wpimg.wallstcn.com/69a1c46c-eb1c-4b46-8bd4-e9e686ef5251.png'
+      title: defaultSettings.title,
+      logo: logo
     }
   }
 }
@@ -55,8 +58,8 @@ export default {
     width: 100%;
 
     & .sidebar-logo {
-      width: 32px;
-      height: 32px;
+      width: 181px;
+      height: 24px;
       vertical-align: middle;
       margin-right: 12px;
     }

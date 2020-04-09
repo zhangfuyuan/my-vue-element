@@ -1,12 +1,20 @@
 import Mock from 'mockjs'
-import { param2Obj } from '../src/utils'
+import {
+  param2Obj
+} from '../src/utils'
 
 import user from './user'
 import table from './table'
+import __test from './__test'
+import admin from './admin'
+import online from './online'
 
 const mocks = [
   ...user,
-  ...table
+  ...table,
+  ...__test,
+  ...admin,
+  ...online,
 ]
 
 // for front mock
@@ -31,7 +39,11 @@ export function mockXHR() {
     return function(options) {
       let result = null
       if (respond instanceof Function) {
-        const { body, type, url } = options
+        const {
+          body,
+          type,
+          url
+        } = options
         // https://expressjs.com/en/4x/api.html#req
         result = respond({
           method: type,

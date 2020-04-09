@@ -46,7 +46,7 @@ export const constantRoutes = [
 
   {
     path: '/',
-    redirect: '/404',
+    redirect: '/admin',
     hidden: true
   },
 

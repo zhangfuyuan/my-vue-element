@@ -37,18 +37,18 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js'),
-    proxy: {
-      '/api': {
-        // target: 'https://tcc.taobao.com/cc/json',
-        target: 'https://www.kuaidi100.com',
-        ws: true,
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
-    }
+    before: require('./mock/mock-server.js')
+    // proxy: {
+    //   '/api': {
+    //     // target: 'https://tcc.taobao.com/cc/json',
+    //     target: 'https://www.kuaidi100.com',
+    //     ws: true,
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '^/api': ''
+    //     }
+    //   }
+    // }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
